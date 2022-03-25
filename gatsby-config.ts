@@ -1,11 +1,7 @@
 import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
-  siteMetadata: {
-    title: ``,
-    siteUrl: `https://www.yourdomain.tld`,
-  },
-  plugins: [],
+  plugins: ['gatsby-plugin-emotion'],
 }
 
 export default config

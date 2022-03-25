@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "develop": "lsof -Pi :7070 -sTCP:LISTEN || gatsby develop -p 7070",
-    "start": "gatsby develop",
+    "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

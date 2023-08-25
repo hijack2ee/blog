@@ -4,11 +4,11 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "create:post": "node scripts/post.js $POST_TITLE"
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "^18.2.0",

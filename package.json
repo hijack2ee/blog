@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "rm -rf build && next build",
+    "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
     "create:post": "node scripts/post.js $POST_TITLE"

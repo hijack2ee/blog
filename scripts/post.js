@@ -9,9 +9,9 @@ function createTemplate(title = "new-post") {
 title: ${title}
 rexcerpt:
 rcoverImage:
-date: ${new Date().toISOString()}
+date: '${new Date().toISOString()}'
 author:
-  name: hijack2ee
+  name: 'hijack2ee'
   picture:
 ogImage:
   url:

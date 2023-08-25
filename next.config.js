@@ -1,7 +1,7 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
 module.exports = {
-  images: {
-    loader: 'custom',
-    loaderFile: '/scripts/imageLoader.js'
-  }
+  assetPrefix: isProd ? 'blog' : undefined,
+  basePath: isProd ? '/blog' : undefined,
 };

@@ -2,8 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "prebuild": "node scripts/prebuild.js",
-    "build": "yarn prebuild && next build",
+    "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
     "create:post": "node scripts/post.js $POST_TITLE"

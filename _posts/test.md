@@ -2,9 +2,9 @@
 title: test
 rexcerpt:
 rcoverImage:
-date: 2023-08-25T12:21:39.333Z
+date: '2023-08-25T12:28:19.378Z'
 author:
-  name: hijack2ee
+  name: 'hijack2ee'
   picture:
 ogImage:
   url:

@@ -6,15 +6,15 @@ function createTemplate(title = "new-post") {
   fs.writeFile(
     `${POST_PATH}/${title}.md`,
     `---
-title: ${title}
-rexcerpt:
-rcoverImage:
-date: ${new Date().toISOString()}
+title: '${title}'
+excerpt: ''
+coverImage: ''
+date: '${new Date().toISOString()}'
 author:
-  name: hijack2ee
-  picture:
+  name: 'hijack2ee'
+  picture: ''
 ogImage:
-  url:
+  url: ''
 ---`,
     console.error
   );

@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "prebuild": "node scripts/prebuild.js",
+    "build": "yarn prebuild && next build",
     "start": "next start",
     "typecheck": "tsc",
     "create:post": "node scripts/post.js $POST_TITLE"
@@ -10,6 +11,7 @@
   "dependencies": {
     "classnames": "^2.3.1",
     "date-fns": "^2.30.0",
+    "fs-extra": "^11.1.1",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "^18.2.0",

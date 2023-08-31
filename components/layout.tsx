@@ -1,23 +1,21 @@
-import Alert from './alert'
-import Footer from './footer'
-import Meta from './meta'
+import Meta from "./meta";
+import Navigation from "./composed/Navigation";
+import { ROUTES } from "../lib/constants";
 
 type Props = {
-  preview?: boolean
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-const Layout = ({ preview, children }: Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
-        <Alert preview={preview} />
+      <div className="min-h-screen px-48 max-w-6xl m-auto">
+        <Navigation items={ROUTES} />
         <main>{children}</main>
       </div>
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

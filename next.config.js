@@ -1,6 +1,10 @@
-const isProd = process.env.NODE_ENV === "production";
+const dotenv = require("dotenv");
+
+const { parsed: env } = dotenv.config({
+  path: `.env/${process.env.NODE_ENV}.env`,
+});
 
 /** @type {import('next').NextConfig} */
 module.exports = {
-  assetPrefix: isProd ? "https://hijack2ee.github.io/blog" : undefined,
+  env,
 };

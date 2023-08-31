@@ -1,4 +1,4 @@
-import { NavigationItem } from "../components/composed/Navigation";
+import type { NavigationItem } from "../interfaces/navigation";
 
 export const EXAMPLE_PATH = "blog-starter";
 export const CMS_NAME = "Markdown";

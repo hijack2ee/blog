@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import type Post from "../../../interfaces/post";
-import DateFormatter from "../../date-formatter";
+import type Post from "@/interfaces/post";
+import DateFormatter from "@/components/date-formatter";
 
 const Abstraction = ({ title, date, excerpt, slug }: Post) => {
   return (

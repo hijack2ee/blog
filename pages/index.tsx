@@ -1,7 +1,8 @@
-import Container from "../components/container";
-import { getAllPosts } from "../lib/api";
 import Head from "next/head";
-import Post from "../interfaces/post";
+
+import Container from "@/components/container";
+import { getAllPosts } from "@/lib/api";
+import Post from "@/interfaces/post";
 
 type Props = {
   allPosts: Post[];

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useId } from "react";
 
-import type { NavigationItem } from "../../../interfaces/navigation";
+import type { NavigationItem } from "@/interfaces/navigation";
 
 type Props = {
   items: NavigationItem[];

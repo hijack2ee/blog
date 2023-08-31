@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, ImgHTMLAttributes } from "react";
 
-import { concat } from "../../lib/utils/url";
+import { concat } from "@/lib/utils/url";
 
 const Img = ({
   src,

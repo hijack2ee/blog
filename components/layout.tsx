@@ -1,6 +1,6 @@
-import Meta from "./meta";
-import Navigation from "./composed/Navigation";
-import { ROUTES } from "../lib/constants";
+import Meta from "@/components/meta";
+import Navigation from "@/components/composed/Navigation";
+import { ROUTES } from "@/lib/constants";
 
 type Props = {
   children: React.ReactNode;

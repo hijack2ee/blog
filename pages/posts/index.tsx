@@ -1,10 +1,10 @@
 import { GetStaticProps, NextPage } from "next";
 import { useId } from "react";
 
-import { getAllPosts } from "../../lib/api";
-import Post from "../../interfaces/post";
-import Abstraction from "../../components/composed/Abstraction";
-import SectionSeparator from "../../components/section-separator";
+import { getAllPosts } from "@/lib/api";
+import Post from "@/interfaces/post";
+import Abstraction from "@/components/composed/Abstraction";
+import SectionSeparator from "@/components/section-separator";
 
 type Props = {
   allPosts: Post[];

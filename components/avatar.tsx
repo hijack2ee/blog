@@ -1,4 +1,4 @@
-import Img from "./common/Img";
+import Img from "@/components/common/Img";
 
 type Props = {
   name: string;
@@ -8,11 +8,7 @@ type Props = {
 const Avatar = ({ name, picture }: Props) => {
   return (
     <div className="flex items-center">
-      <Img
-        src={picture}
-        className="w-12 h-12 rounded-full mr-4"
-        alt={name}
-      />
+      <Img src={picture} className="w-12 h-12 rounded-full mr-4" alt={name} />
       <div className="text-xl font-bold">{name}</div>
     </div>
   );
